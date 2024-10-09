@@ -1,0 +1,302 @@
+$font-family: "Kanit", sans-serif;
+$font-weight: 600;
+$font-style: normal;
+$font-size: 1.2em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    overflow: auto;
+}
+
+/* nav start */
+.nav {
+    background-color: aliceblue;
+    overflow: hidden;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links {
+        height: 100%;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+            height: 50px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            font-size: $font-size;
+            font-family: $font-family;
+            font-weight: 400;
+            font-style: $font-style;
+        }
+
+        a.active {
+            background-color: orange;
+            color: white;
+        }
+
+        a:hover {
+            background-color: orange;
+            color: white;
+        }
+    }
+
+    .icons {
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+            height: 30px;
+            width: 30px;
+            margin: 20px;
+        }
+    }
+}
+
+/* nav end */
+
+/* Content start */
+
+.shop-upper {
+    height: fit-content;
+    padding: 1rem;
+
+    .shop-upper-links {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-bottom: 5px solid grey;
+
+        a {
+            height: 100%;
+            padding: 1rem;
+            color: black;
+            text-decoration: none;
+            font-family: $font-family;
+            font-weight: $font-weight;
+            font-style: $font-style;
+            font-size: 1.5em;
+            border-bottom: 0px solid white;
+            transition: all 0.2s ease-out;
+        }
+
+        a:hover {
+            color: orange;
+            border-bottom: 5px solid orange;
+        }
+    }
+}
+
+.common {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+
+    .card {
+        height: fit-content;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.5em;
+        background-color: aliceblue;
+        border-radius: 0.5rem;
+
+        img {
+            height: 15rem;
+            width: 16rem;
+        }
+
+        h1 {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        button {
+            height: 4em;
+            width: 10em;
+            background-color: black;
+            color: white;
+            border-radius: 0.5rem;
+            border: none;
+            outline: none;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1em;
+        }
+
+        button:hover {
+            cursor: pointer;
+            color: orange;
+        }
+    }
+}
+
+/* Content end */
+
+/*  footer start  */
+.footer {
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    .footer-holder-1 {
+        height: 20rem;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        background-color: transparent;
+        flex: 1;
+        padding: 1rem;
+
+        h1 {
+            font-weight: 500;
+            font-size: 2rem;
+            font-family: $font-family;
+            color: white;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        flex-direction: row;
+        background-color: transparent;
+        width: 80%;
+        gap: 1rem;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    }
+
+    .footer-holder-2 {
+        height: 20rem;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        background-color: transparent;
+        flex: 1;
+        padding: 1rem;
+
+
+        h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            font-family: $font-family;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: $font-family;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        a.active {
+            color: orange;
+        }
+
+
+    }
+
+    .footer-holder-3 {
+        height: 20rem;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        background-color: transparent;
+        flex: 1;
+        padding: 1rem;
+
+        h1 {
+            font-weight: 900;
+            font-size: 2rem;
+            font-family: $font-family;
+            color: white;
+        }
+
+        .search-2 {
+            width: 90%;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+
+            input {
+                display: flex;
+                flex: 1;
+                padding: 1rem;
+                font-family: $font-family;
+                outline: none;
+                border: none;
+                border-color: black;
+            }
+
+            button {
+                width: 5rem;
+                background-color: orange;
+                color: white;
+                border: none;
+
+                :hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* footer end */

@@ -1,0 +1,668 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  overflow: auto;
+}
+
+.nav {
+  background-color: aliceblue;
+  overflow: hidden;
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.links a {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.links a.active {
+  background-color: orange;
+  color: white;
+}
+
+.links a:hover {
+  background-color: orange;
+  color: white;
+}
+
+.icons {
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icons img {
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+}
+
+/*Content*/
+.content-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.right-content {
+  display: flex;
+  flex: 1;
+  padding: 3em;
+  align-items: start;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.right-content h1 {
+  font-size: 3.5em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.right-content h1 i {
+  text-decoration: none;
+  font-style: normal;
+  color: orange;
+}
+
+.right-content h3 {
+  font-size: 1.1em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.right-content p {
+  font-size: 1.1em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.search {
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  font-family: "Kanit", sans-serif;
+  outline: none;
+  border: none;
+  border-color: black;
+  border-radius: 0.5rem;
+}
+
+.search button {
+  width: 10rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.card-holder {
+  height: 10rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.card {
+  height: 80%;
+  width: 33.3333333333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: aliceblue;
+}
+
+.img-wrapper {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-wrapper img {
+  height: 40px;
+  width: 40px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 3em;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 1px;
+}
+
+.small-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 2px;
+  gap: 0.5rem;
+}
+
+.small-hero img {
+  object-fit: contain;
+  height: 10rem;
+  width: 10rem;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.txt h4 {
+  font-size: 1.3em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: orange;
+}
+
+.txt h1 {
+  font-size: 3em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+
+.txt h1 i {
+  text-decoration: none;
+  font-style: normal;
+  color: orange;
+}
+
+.underlined-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+  flex-direction: row;
+  flex: 1;
+  height: fit-content;
+}
+
+.underlined-text a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.underlined-text a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.underlined-text a.active {
+  color: orange;
+  text-decoration: underline;
+}
+
+.big-card {
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.inner-card {
+  height: fit-content;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.inner-card img {
+  height: 15rem;
+  width: fit-content;
+}
+
+.inner-card button {
+  width: 10rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.inner-card h3,
+h2 {
+  font-size: 1.5em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inner-card h4 {
+  font-size: 1em;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  opacity: 50%;
+}
+
+.btn-cover {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.btn-cover button {
+  height: 3.5rem;
+  width: 10rem;
+  color: white;
+  background-color: orange;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+.btn-cover button:hover {
+  cursor: pointer;
+}
+
+.big-hero {
+  height: fit-content;
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+}
+
+.left-big {
+  height: fit-content;
+  width: fit-content;
+}
+
+.right-big {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.right-big h5 i {
+  text-decoration: none;
+  font-style: normal;
+  color: orange;
+}
+
+.inner-right {
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.inner-card-right {
+  height: 13rem;
+  width: fit-content;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.right-big h6 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.right-big h5 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.right-big h4 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.wrap-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap-img img {
+  height: 40px;
+  width: 40px;
+}
+
+.para {
+  width: 20rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.para h1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.para p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.one {
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.two {
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  font-style: normal;
+}
+
+.two i {
+  text-decoration: none;
+  font-style: normal;
+  color: orange;
+}
+
+.contacts {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.contact-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 0.1rem;
+  width: 25rem;
+}
+
+.contact-holder img {
+  height: 40px;
+  width: 40px;
+}
+
+.contact-holder h2 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.contact-holder h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: black;
+  opacity: 50%;
+}
+
+.footer {
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-holder-1 {
+  height: 20rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  background-color: transparent;
+  flex: 1;
+  padding: 1rem;
+}
+
+.footer-holder-1 h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: transparent;
+  width: 80%;
+  gap: 1rem;
+}
+
+.social-media img {
+  height: 40px;
+  width: 40px;
+}
+
+.social-media img:hover {
+  cursor: pointer;
+}
+
+.footer-holder-2 {
+  height: 20rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  background-color: transparent;
+  flex: 1;
+  padding: 1rem;
+}
+
+.footer-holder-2 h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+.footer-holder-2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+}
+
+.footer-holder-2 .active {
+  color: orange;
+}
+
+.footer-holder-2 a:hover {
+  color: orange;
+}
+
+.footer-holder-3 {
+  height: 20rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  background-color: transparent;
+  flex: 1;
+  padding: 1rem;
+}
+
+.footer-holder-3 h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+.search-2 {
+  width: 90%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-2 input {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  font-family: "Kanit", sans-serif;
+  outline: none;
+  border: none;
+  border-color: black;
+}
+
+.search-2 button {
+  width: 5rem;
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.search-2 button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=home.css.map */
